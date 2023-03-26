@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webdemo-deployment
+spec:
+  selector:
+    matchLabels:
+      app: webdemo
+  replicas: 2 # Puedes cambiar esto según tus necesidades
+  template:
+    metadata:
+      labels:
+        app: webdemo
+    spec:
+      containers:
+        - name: webdemo
+          image: fcambres/webdemo:v1.53
+          ports:
+            - containerPort: 80 # Puedes cambiar esto según las necesidades de tu aplicación
+
+
+## minikube dashboard
+## kubectl delete ns dev
+## kubectl get ns
+##  kubectl create namespace dev
+## kubectl get svc -n dev
+## minikube ip
+## http://192.168.49.2:32683/

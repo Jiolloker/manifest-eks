@@ -8,5 +8,5 @@ spec:
   type: LoadBalancer # Puedes cambiar esto según tus necesidades de red
   ports:
     - name: http
-      port: 81 # Puedes cambiar esto según las necesidades de tu aplicación
+      port: 80 # Puedes cambiar esto según las necesidades de tu aplicación
       targetPort: 80 # Puedes cambiar esto según las necesidades de tu aplicación

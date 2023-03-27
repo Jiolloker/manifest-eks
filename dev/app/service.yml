@@ -4,7 +4,7 @@ metadata:
   name: webdemo-service
 spec:
   selector:
-    app: webdemo
+    app: LoadBalancer
   type: NodePort # Puedes cambiar esto según tus necesidades de red
   ports:
     - name: http

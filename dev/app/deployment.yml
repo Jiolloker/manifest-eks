@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webdemo
-          image: fcambres/webdemo:v1.76
+          image: fcambres/webdemo:v1.83
           ports:
             - containerPort: 80 # Puedes cambiar esto según las necesidades de tu aplicación
 

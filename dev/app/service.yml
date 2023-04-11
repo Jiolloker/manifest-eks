@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: webdemo
-  type: LoadBalancer # Puedes cambiar esto según tus necesidades de red
+  type: NodePort # Puedes cambiar esto según tus necesidades de red
   ports:
     - name: http
       port: 80 # Puedes cambiar esto según las necesidades de tu aplicación

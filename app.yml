@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
     path: dev/app/ ####
   destination: 
-    server: https://kubernetes.default.svc/
+    server: https://kubernetes.default.svc
     namespace: dev-myshoppingweb   ####
 
   syncPolicy:
@@ -37,7 +37,7 @@ spec:
     targetRevision: HEAD
     path: prod/app/ ####
   destination: 
-    server: https://kubernetes.default.svc/
+    server: https://kubernetes.default.svc
     namespace: prod-myshoppingweb   ####
 
   syncPolicy:
@@ -63,7 +63,7 @@ spec:
     targetRevision: HEAD
     path: staging/app/ ####
   destination: 
-    server: https://kubernetes.default.svc/
+    server: https://kubernetes.default.svc
     namespace: staging-myshoppingweb   ####
 
   syncPolicy:
